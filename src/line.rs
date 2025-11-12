@@ -29,3 +29,33 @@ pub fn line(fb: &mut FrameBuffer, start: &Vec3, end: &Vec3) {
         }
     }
 }
+
+// Línea con grosor N (1..3 recomendado) usando z-buffer
+pub fn line_depth_thick(fb: &mut FrameBuffer, a: &Vec3, b: &Vec3, thickness: i32) {
+    let t = thickness.max(1);
+    let (x1, y1, z1) = (a.x, a.y, a.z);
+    let (x2, y2, z2) = (b.x, b.y, b.z);
+    let dx = x2 - x1;
+    let dy = y2 - y1;
+    let dz = z2 - z1;
+
+    let steps = dx.abs().max(dy.abs()).max(1.0);
+    let sx = dx / steps;
+    let sy = dy / steps;
+    let sz = dz / steps;
+
+    let (mut x, mut y, mut z) = (x1, y1, z1);
+    for _ in 0..=steps as i32 {
+        let xi = x.round() as i32;
+        let yi = y.round() as i32;
+        for ox in -t..=t {
+            for oy in -t..=t {
+                // pequeño disco cuadrado; si quieres más “redondo”, filtra por ox*ox+oy*oy <= t*t
+                fb.set_pixel_z(xi + ox, yi + oy, z);
+            }
+        }
+        x += sx;
+        y += sy;
+        z += sz;
+    }
+}
