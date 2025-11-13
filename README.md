@@ -11,4 +11,21 @@ Este repositorio contiene un renderer por software de una simulación de un sist
 ### Imagen del modelo
 
 ![Render del modelo](assets/render.png)
+ 
+ ---
 
+## Segunda entrega: Sistema planetario y shaders
+
+En la etapa actual se añadieron:
+
+- Shaders específicos por tipo de cuerpo celeste (`Star`, `Mercury`, `Venus`, `Rocky` (Tierra), `Mars`, `GasGiant` (Júpiter), `Moon`).
+- Animaciones basadas en tiempo (rotación propia, detalles que “respiran”, patrones dinámicos).
+- Órbita de la Luna alrededor de la Tierra.
+- Anillos de Júpiter generados por geometría procedimental en CPU y rasterizados en el mismo framebuffer.
+- Contornos dibujados por detección de aristas entre caras front/back para resaltar la silueta.
+
+### Video de la simulación actual
+
+[Video de la simulación – Sistema planetario](assets/lab5.mp4)
+
+---
