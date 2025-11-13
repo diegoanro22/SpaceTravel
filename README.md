@@ -26,6 +26,7 @@ En la etapa actual se añadieron:
 
 ### Video de la simulación actual
 
-[Video de la simulación – Sistema planetario](assets/lab5.mp4)
+https://github.com/user-attachments/assets/652ff6d3-b695-4fa8-9c4a-01786a231f37
+
 
 ---
