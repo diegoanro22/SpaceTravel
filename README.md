@@ -30,3 +30,41 @@ https://github.com/user-attachments/assets/652ff6d3-b695-4fa8-9c4a-01786a231f37
 
 
 ---
+
+## Proyecto 3: Space Travel 
+
+En la versión final del proyecto se implementaron las siguientes características para cumplir con los requerimientos de la tarea:
+
+- **Sistema estelar completo en el plano eclíptico**
+  - Un **sol** en el origen.
+  - Varios planetas alineados al plano eclíptico: Mercurio, Venus, Tierra, Marte y Júpiter.
+  - **Luna** orbitando la Tierra.
+  - Cada cuerpo tiene **traslación orbital** y **rotación sobre su propio eje**.
+
+- **Cámara con movimiento 3D**
+
+- **Warping animado a diferentes puntos del sistema**
+    - Vista general del sistema.
+    - Vista enfocada en el Sol.
+    - Vista en la órbita de la Tierra.
+    - Vista de Marte.
+    - Vista de Júpiter.
+    - Vista rasante sobre el plano eclíptico.
+
+- **Nave que sigue a la cámara**
+
+- **Skybox / estrellas**
+
+- **Órbitas renderizadas**
+
+### Controles (resumen)
+
+- **Movimiento**: `W`, `A`, `S`, `D` (frente/atrás/lateral), `Q` / `E` (abajo/arriba).
+- **Rotación de cámara**:
+  - Flechas (`↑`, `↓`, `←`, `→`)  
+  - o mouse (activar/desactivar con `M`).
+- **Zoom (FOV)**: `Z` / `X`.
+- **Warps a vistas clave**: teclas `1`–`6`.
+- **Captura de imagen**: `P` guarda `render.png` en la raíz del proyecto.
+
+
