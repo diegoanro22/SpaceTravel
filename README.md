@@ -67,4 +67,9 @@ En la versión final del proyecto se implementaron las siguientes característic
 - **Warps a vistas clave**: teclas `1`–`6`.
 - **Captura de imagen**: `P` guarda `render.png` en la raíz del proyecto.
 
+### Video del sistema solar 
+
+https://github.com/user-attachments/assets/4572163b-bb28-43af-952f-a0ad99f5e00a
+
+
 
